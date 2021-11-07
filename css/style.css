@@ -1,0 +1,113 @@
+body{
+	background:#ffffff url("../images/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	cursor: context-menu;
+}
+
+img{
+	width: 10vw;
+	height: 10vw;
+}
+
+section{
+	display: block;
+	text-align: center;
+	margin-top: 100px;
+	padding-bottom: 50px;
+}
+
+.box{
+	margin-top: 20px;
+}
+
+h1{
+	font-size: 60px;
+	text-transform: uppercase;
+	font-family: 'Comic Neue', cursive;
+	color: #57494E;
+}
+
+
+h3{
+	margin: 5px 10px;
+	font-family: 'Caveat', cursive;
+	color: #614030;
+	font-size: 30px;
+}
+
+
+button{
+  background-color: #414f5e;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: 'Comic Neue', cursive;
+  font: #C7BDC5;
+  font-size: 16px;
+  margin-top: 40px;
+  padding: 20px 45px;
+  border-radius: 12px;
+  opacity: 0.9;
+  transition: 0.6s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.copyright{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 15px;
+	opacity: 0.6;
+}
+
+@media (max-width: 800px){
+	h3{
+		font-size: 20px;
+	}
+
+	h1{
+		font-size: 40px;
+	}
+
+	.copyright{
+		font-size: 10px;
+	}
+
+	button{
+		padding: 15px 45px;
+	}
+
+}
+
+@media(max-width: 300px){
+	h3{
+		font-size: 15px;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+	button{
+		padding: 10px 30px;
+		font-size: 15px;
+	}
+}
+
+@keyframes flash {
+	0% { opacity: .2; }
+	100% { opacity: 1; }
+}
+
+button:hover {padding: 2% 4%}
+
+img:hover {
+	opacity: 1;
+	-webkit-animation: flash 1s;
+	animation: flash 1s;
+}
+
+
